@@ -1,0 +1,2 @@
+2 8
+R T T T S T R S

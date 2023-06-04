@@ -1,0 +1,1 @@
+print("8-bonito" if sum(map(int, input())) % 2 else "dumbinho")

@@ -1,0 +1,2 @@
+3 8
+S T R S S S R T

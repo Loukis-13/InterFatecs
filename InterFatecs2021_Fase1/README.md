@@ -1,0 +1,12 @@
+# InterFatecs 2021 - Fase única
+- [x] A industria
+- [x] B fluxonator
+- [x] C azeitonas
+- [x] D fotos
+- [x] E estacionamento
+- [x] F squarecity
+- [x] G jegues
+- [x] H annagramas
+- [x] I batatinha
+- [x] J power
+- [x] K resgate
