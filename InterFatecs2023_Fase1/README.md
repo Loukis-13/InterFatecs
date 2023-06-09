@@ -6,8 +6,8 @@
 - [x] D argasd
 - [x] E crausio
 - [x] F spins
-- [ ] G silas
+- [x] G silas
 - [x] H radar
 - [x] I foraminis
 - [x] J palindromo
-- [ ] K evento
+- [x] K evento
