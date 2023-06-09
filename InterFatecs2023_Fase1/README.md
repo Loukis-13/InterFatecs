@@ -4,10 +4,10 @@
 - [ ] B fifteenlove
 - [x] C piramide
 - [x] D argasd
-- [ ] E crausio
+- [x] E crausio
 - [x] F spins
 - [ ] G silas
 - [x] H radar
-- [ ] I foraminis
+- [x] I foraminis
 - [x] J palindromo
 - [ ] K evento

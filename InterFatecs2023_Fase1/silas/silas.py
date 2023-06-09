@@ -14,7 +14,7 @@ visitados = set()
 ultimo = (0, 0)
 
 while fila:
-    atual = fila.pop()
+    atual = fila.pop(0)
     x, y = atual
 
     if campo[y][x] == "K":
@@ -24,17 +24,14 @@ while fila:
     visitados.add(atual)
 
     for ix, iy in [(x, y+1), (x+1, y)]:
-        if ix > w or iy > h or campo[iy][ix] == "#":
+        if ix > w or iy > h or campo[iy][ix] == "#" or (ix, iy) in visitados:
             continue
             
-        if campo[iy][ix].isnumeric():
-            if int(campo[iy][ix]) <= poder:
-                fila.append((ix, iy))
-                distancia[(ix, iy)] = distancia[atual] + 1
-            else:
-                continue
+        if campo[iy][ix].isnumeric() and int(campo[iy][ix]) > poder:
+            continue
                 
         fila.append((ix, iy))
+        visitados.add((ix, iy))
         distancia[(ix, iy)] = distancia[atual] + 1
 else:
     print("N")
