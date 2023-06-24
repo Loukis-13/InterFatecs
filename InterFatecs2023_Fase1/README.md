@@ -1,6 +1,6 @@
 # InterFatecs 2023 - Primeira Fase
 - [x] Aquecimento
-- [ ] A blaittland
+- [X] A blaittland
 - [ ] B fifteenlove
 - [x] C piramide
 - [x] D argasd
