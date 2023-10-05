@@ -12,4 +12,4 @@ Repositório de Problemas da Maratona de Programação [InterFatecs](https://int
 ### 2023 
 
 * InterFatecs 2023 - Primeira Fase (03/06/2023)  
-<!-- * InterFatecs 2023 - Fase Final (30/09/2023, Praia Grande)   -->
+* InterFatecs 2023 - Fase Final (30/09/2023, Praia Grande)  
