@@ -13,11 +13,11 @@ def calc_temp(temps):
         i = tuple(map(int, i.split(":")))
         x += i[0] * 60_000 + i[1] * 1000 + i[2]
 
-    x /= len(temps)
+    x //= len(temps)
 
-    horas = x//60_000
+    horas = int(x//60_000)
 
-    return (str(horas) if horas else "") + f"{int(x//1000%60):02}:{int(x%1000):>03}"
+    return x, (f"{horas}:" if horas else "") + f"{int(x//1000%60):02}:{int(x%1000):>03}"
 
 
 print(".Id.Nome.......................Media......Melhor")
@@ -32,31 +32,29 @@ while (ent := input()) != "FIM":
     for i in range(int(n)):
         equipe, *tempos = input().split()
 
-        media = ""
-        melhor = ""
+        media = "DNF"
+        melhor = "DNF"
+        pos_1 = float("inf")
+        pos_2 = float("inf")
 
         tempos.sort()
 
         DNFs = tempos.count("0:00:000")
 
         if DNFs == 0:
-            melhor = calc_temp([tempos[0]])
-            media = calc_temp(tempos[1:4])
+            pos_1, media = calc_temp(tempos[1:4])
+            pos_2, melhor = calc_temp([tempos[0]])
         elif DNFs == 1:
-            melhor = calc_temp([tempos[1]])
-            media = calc_temp(tempos[2:])
+            pos_1, media = calc_temp(tempos[2:])
+            pos_2, melhor = calc_temp([tempos[1]])
         elif 2 <= DNFs <= 4:
-            media = "DNF"
             while "0:00:000" in tempos:
                 tempos.remove("0:00:000")
-            melhor = calc_temp([tempos[0]])
-        else:
-            media = "DNF"
-            melhor = "DNF"
+            pos_2, melhor = calc_temp([tempos[0]])
 
-        cubo.append([media, melhor, participantes[equipe], equipe])
+        cubo.append([pos_1, pos_2, media, melhor, participantes[equipe], equipe])
 
     cubo.sort()
 
-    for media, melhor, equipe, id in cubo:
+    for *_, media, melhor, equipe, id in cubo:
         print(f"{id:>3} {equipe:<20}{media:>12}{melhor:>12}")

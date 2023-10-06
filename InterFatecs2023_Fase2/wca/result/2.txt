@@ -11,11 +11,11 @@ Cubo 3x3x3
   1 Pato Donald               30:313      26:441
  10 Irmaos Metralha              DNF      40:907
 Megaminx 3x3
-  6 Huguinho               1.002:687      59:884
-  8 Peninha               12.006:468  11.039:965
-  3 Tio Patinhas           2.043:987   2.043:778
   5 Zezinho                   57:818      57:241
   7 Luizinho                  58:177      57:833
+  6 Huguinho                1:02:687      59:884
+  3 Tio Patinhas            2:43:987    2:43:778
+  8 Peninha                12:06:468   11:39:965
  10 Irmaos Metralha              DNF         DNF
 Skewb
   7 Luizinho                  02:996      02:100
