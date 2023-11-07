@@ -10,6 +10,9 @@ servers = [[] for _ in range(n)]
 clock = 1
 
 for t, time, alvo in reqs:
+    for i in servers:
+        i[:] = [v for j in i if (v := j - (t - clock)) > 0]
+
     i = servers.index(min(servers, key=len))
 
     if alvo == x:
@@ -18,7 +21,4 @@ for t, time, alvo in reqs:
 
     servers[i].append(time)
 
-    for i in servers:
-        i[:] = [v for j in i if (v := j - t) > 0]
-
-    clock = i
+    clock = t

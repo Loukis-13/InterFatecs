@@ -1,6 +1,8 @@
 cd $1
 
-mkdir result
+if [[ ! -d result ]]; then
+    mkdir result
+fi
 
 for i in $(seq 1 $(ls -1 input | wc -l)); do
     echo "### $i ###"

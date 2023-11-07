@@ -1,6 +1,6 @@
 # InterFatecs 2023 - Segunda Fase
 - [x] Aquecimento
-- [ ] A loadbalancer
+- [x] A loadbalancer
 - [x] B impressora3d
 - [x] C wca
 - [x] D injecaodependencia
